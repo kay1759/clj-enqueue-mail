@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package clj_enqueue_mail.email;
+
+option java_outer_classname = "Example";
+
+message Email {
+  required string from = 1;
+  required string to = 2; 
+  required string subject = 3;
+  optional string text_body = 4; 
+  optional string html_body = 5;
+};
